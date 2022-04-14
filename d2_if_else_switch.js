@@ -74,33 +74,33 @@ switch (pizzaTopping) { //value we want to check
 
 //* Activity 3
 
-let password = "dhskjd3b"
-let passwordList = []
+let password = "dhskjd3b";
+let passwordList = [];
 
 if (password.length < 8) {
-    console.log("The password chosen is too short")
+    console.log("The password chosen is too short");
 }
 else {
-    passwordList.push(password)
-    console.log(passwordList)
-    console.log("The password has been saved")
+    passwordList.push(password);
+    console.log(passwordList);
+    console.log("The password has been saved");
 }
 
 //* Activity 4
 
-let num = Math.floor(Math.random() * 100)
+let num = Math.floor(Math.random() * 100);
 
 if (num % 3 == 0 && num % 5 == 0) {
-    console.log(`The number ${num} is divsible by 3 and 5.`)
+    console.log(`The number ${num} is divsible by 3 and 5.`);
 }
 else if (num % 3 == 0) {
-    console.log(`The number ${num} is divsible by 3.`)
+    console.log(`The number ${num} is divsible by 3.`);
 }
 else if (num % 5 == 0) {
-    console.log(`The number ${num} is divsible by 5.`)
+    console.log(`The number ${num} is divsible by 5.`);
 }
 else {
-    console.log(`The number ${num} is not divsible by 3 or 5.`)
+    console.log(`The number ${num} is not divsible by 3 or 5.`);
 }
 
 //* Activity 5 - FIZZ BUZZ
@@ -108,61 +108,61 @@ else {
 let num2 = 0
 while (num2 < 16) {
     if (num2 % 3 == 0 && num2 % 5 == 0) {
-        console.log("Fizz Buzz")
+        console.log("Fizz Buzz");
     }
     else if (num2 % 3 == 0) {
-        console.log("Fizz")
+        console.log("Fizz");
     }
     else if (num2 % 5 == 0) {
-        console.log("Buzz")
+        console.log("Buzz");
     }
     else {
-        console.log(num2)
+        console.log(num2);
     }
     num2++;
 }
 
 //* Activity 6 - PALINDROME
-let num3 = String(20002)
-let numReverse = []
+let num3 = String(20002);
+let numReverse = [];
 Array.from(num3).forEach(function(character) {
     numReverse += character;
     console.log(numReverse);
     if (num3 === numReverse) {
-        console.log("Palindrome")
+        console.log("Palindrome");
     }
     else {
-        console.log("Not a palindrome")
+        console.log("Not a palindrome");
     }
     
 });
 
 //*METHOD TWO
 
-let num3a = String(20002)
+let num3a = String(20002);
 let numReverse2 = Number(String(num3a).split("").reverse().join(""));
 
 if (num3a == numReverse2){
-console.log(`${num} is a palindrome.`)
+console.log(`${num} is a palindrome.`);
 }
 else {
-    console.log(`${num} is not a palindrome.`)
+    console.log(`${num} is not a palindrome.`);
 }
 
 //* Activity 7
 
-let time = 7
-let placeOfWork = 8
-let townOfHome = 18
+let time = 7;
+let placeOfWork = 8;
+let townOfHome = 18;
 
 if (time == 7) {
-    console.log("Going to Work")
+    console.log("Going to Work");
 }
 else if (time >= placeOfWork && time < townOfHome) {
-    console.log("At work")
+    console.log("At work");
 }
 else if (time >= townOfHome || time <= 6) {
-    console.log("At home")
+    console.log("At home");
 }
 
 
@@ -170,31 +170,31 @@ else if (time >= townOfHome || time <= 6) {
 
 const text = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi";
 
-let vowelList = [text.lastIndexOf("a"), text.lastIndexOf("e"), text.lastIndexOf("i"), text.lastIndexOf("o"), text.lastIndexOf("u")]
+let vowelList = [text.lastIndexOf("a"), text.lastIndexOf("e"), text.lastIndexOf("i"), text.lastIndexOf("o"), text.lastIndexOf("u")];
 
-console.log(Math.max(...vowelList))
+console.log(Math.max(...vowelList));
 
 //* Activity 9
 
-let word = "CodeNationC"
+let word = "CodeNationC";
 
 if (word[0] == word[word.length - 1]) {
-    console.log(true)
+    console.log(true);
 }
 else {
-    console.log(false)
+    console.log(false);
 }
 
 //* Activity 10
 let i = 0
 while (i < 5) {
-    let num4 = Math.floor(Math.random() * 100)
-    let num5 = Math.floor(Math.random() * 100)
+    let num4 = Math.floor(Math.random() * 100);
+    let num5 = Math.floor(Math.random() * 100);
     if ((num4 + num5) % 2 === 0) {
-        console.log(`\n${num4} + ${num5} = ${num4 + num5} which is even`)
+        console.log(`\n${num4} + ${num5} = ${num4 + num5} which is even`);
     }
     else {
-        console.log(`\n${num4} + ${num5} = ${num4 + num5} which is odd...so let's multiply the numbers together instead: ${num4 * num5}`)
+        console.log(`\n${num4} + ${num5} = ${num4 + num5} which is odd...so let's multiply the numbers together instead: ${num4 * num5}`);
     }
     i++;
 }

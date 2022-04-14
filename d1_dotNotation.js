@@ -23,7 +23,7 @@ console.log("hello".toUpperCase());
 // object has method used on it causing it to become upper case
 console.log("hello".toUpperCase());
 
-const ran_Num = Math.random()*10
+const ran_Num = Math.random()*10;
 
 console.log(ran_Num);
 
@@ -35,39 +35,39 @@ console.log(ran_Num.toFixed(2));
 
 // activity
 
-console.log("\n METHOD 1\n")
+console.log("\n METHOD 1\n");
 
-console.log("     |    |     ")
-console.log("     |    |     ")
-console.log("     |    |     ")
-console.log("----------------")
-console.log("     |    |     ")
-console.log("     |    |     ")
-console.log("     |    |     ")
-console.log("----------------")
-console.log("     |    |     ")
-console.log("     |    |     ")
-console.log("     |    |     ")
+console.log("     |    |     ");
+console.log("     |    |     ");
+console.log("     |    |     ");
+console.log("----------------");
+console.log("     |    |     ");
+console.log("     |    |     ");
+console.log("     |    |     ");
+console.log("----------------");
+console.log("     |    |     ");
+console.log("     |    |     ");
+console.log("     |    |     ");
 
-console.log("\n METHOD 2\n")
+console.log("\n METHOD 2\n");
 
-let grid = ["     |    |     ", "----------------"]
+let grid = ["     |    |     ", "----------------"];
 
 for (let i = 1; i < 10; i++) {
     console.log(grid[0]);
     if (i % 3 == 0 && i !== 9) {
-        console.log(grid[1])
+        console.log(grid[1]);
     }
 }
 
-console.log("\n METHOD 3\n")
+console.log("\n METHOD 3\n");
 
 for (i = 1; i < 4; i++) {
     for (j = 1; j < 4; j++) {
         console.log(grid[0]);  
     }
     if (i < 3){
-    console.log(grid[1])
+    console.log(grid[1]);
     }
 }
 

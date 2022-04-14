@@ -23,8 +23,8 @@ console.log(text.replace("u", letter));
 
 let i = 10;
 
-i **= 2
-console.log(i)
+i **= 2;
+console.log(i);
 
 //* camelCase in JavaScript
 
@@ -45,17 +45,17 @@ console.log(`His name is ${username}, he is ${age} years of age and he likes the
 //* Activity 2
 
 function foodAte() {
-    let breakfast = "nothing"
-    let lunch = "nothing"
-    let dinner = "nothing"
+    let breakfast = "nothing";
+    let lunch = "nothing";
+    let dinner = "nothing";
 
-    console.log(`\nI ate ${breakfast} for breakfast, ${lunch}for lunch and ${dinner} for dinner.`)
+    console.log(`\nI ate ${breakfast} for breakfast, ${lunch}for lunch and ${dinner} for dinner.`);
 
-    breakfast = "nothing again"
-    lunch = "nothing again"
-    dinner = "nothing again"
+    breakfast = "nothing again";
+    lunch = "nothing again";
+    dinner = "nothing again";
 
-    console.log(`\nTomorrow i will eat ${breakfast} for breakfast, ${lunch} for lunch and ${dinner} for dinner.`)
+    console.log(`\nTomorrow i will eat ${breakfast} for breakfast, ${lunch} for lunch and ${dinner} for dinner.`);
 }
 foodAte()
 
@@ -77,38 +77,37 @@ const time_birthday = birthday.getTime(); //time since 1970 in ms
 let timeNow = Date.now() //time now since 1970 in ms
 
 timeDifference = Math.floor((timeNow - time_birthday)/1000/60/60/24)
-time_test = 365 - (timeDifference % 365) //doesnt account for leap years thats why it was days off.
-console.log(`${timeDifference} days old`);
+time_test = 365 - (timeDifference % 365) //doesnt account for leap years thats why it was days off til next birthday.
+console.log(`${timeDifference} days old`); //answer
 console.log(`${time_test} days left til your birthday.`);
 
 // Another method
-let today =  new Date()
-let birthday2 = new Date('2001, 4, 7')
-let daysGone = today - birthday2
-daysGone = Math.floor(daysGone / 1000/60/60/24)
+let today =  new Date();
+let birthday2 = new Date('2021, 4, 7')
+let daysPassed = today - birthday2;
+daysPassed = Math.floor(daysPassed / 1000/60/60/24);
 
-
-console.log(today)
-console.log(birthday2)
-console.log(daysGone)
+console.log(today);
+console.log(birthday2);
+console.log(daysPassed);
 
 
 //* Activity 4
 
-let space_1 = "X"
-let space_2 = "O"
-let space_3 = "X"
-let space_4 = "X"
-let space_5 = "O"
+let space_1 = "X";
+let space_2 = "O";
+let space_3 = "X";
+let space_4 = "X";
+let space_5 = "O";
 
-console.log("     |    |     ")
-console.log(` ${space_1}   |  ${space_2} |    `)
-console.log("     |    |     ")
-console.log("----------------")
-console.log("     |    |     ")
-console.log(` ${space_3}   |  ${space_4} |    `)
-console.log("     |    |     ")
-console.log("----------------")
-console.log("     |    |     ")
-console.log(` ${space_5}   |    |    `)
-console.log("     |    |     ")
+console.log("     |    |     ");
+console.log(` ${space_1}   |  ${space_2} |    `);
+console.log("     |    |     ");
+console.log("----------------");
+console.log("     |    |     ");
+console.log(` ${space_3}   |  ${space_4} |    `);
+console.log("     |    |     ");
+console.log("----------------");
+console.log("     |    |     ");
+console.log(` ${space_5}   |    |    `);
+console.log("     |    |     ");

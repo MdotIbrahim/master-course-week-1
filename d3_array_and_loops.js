@@ -5,7 +5,7 @@ let coffeeOrder = ["Alex - Cortado",
 "Ben - Cortado",
 "Charlie - Whatever's new"];
 
-console.log(coffeeOrder)
+console.log(coffeeOrder);
 
  //access individual items.
 console.log(coffeeOrder[2]);
@@ -14,11 +14,11 @@ console.log(coffeeOrder[2]);
 coffeeOrder[1] = "Ann - Vanilla Latte";
 
 console.log(coffeeOrder.length); //length is a property, not a method.
-console.log(coffeeOrder)
+console.log(coffeeOrder);
 
 // add new item to end of array
 coffeeOrder.push("Donna - espresso");
-console.log(coffeeOrder)
+console.log(coffeeOrder);
 
 // remove final item
 coffeeOrder.pop();
@@ -60,14 +60,14 @@ for (let i = 0; i < drinksArray.length; i++) {
     console.log(drinksArray[i]);
 }
 
-let multiplesThree = []
+let multiplesThree = [];
 
 for (let i = 0; i < 20; i++) {
     if (i % 3 == 0 ){
         multiplesThree.push(i);
     }
 }
-console.log(`Numbers divisible by 3 between 0 and 20 are ${multiplesThree}`)
+console.log(`Numbers divisible by 3 between 0 and 20 are ${multiplesThree}`);
 
 //TODO if following anything in a step by step process, top tip is to change the context of what you are recreating to show understanding.
 
@@ -78,18 +78,21 @@ let age = 21
 while (age > 11) {
     console.log("You're too old!");
     age--;
-} console.log("You're no longer too old!")
+} console.log("You're no longer too old!");
 
-console.log("You're no longer too old!")
+console.log("You're no longer too old!");
 
-let cards = ["Diamond", "Spade", "Club", "Heart"]
-let currentCard = None
-let wantedCard = cards[Math.floor(Math.random()*4)]
-while (currentCard != wantedCard); { 
-    currentCard = cards[Math.floor(Math.random()*4)]
-    if (currentCard == "Spade") {
-        console.log(`${currentCard} is the right suit.\n`)
+
+let cards = ["Diamond", "Spade", "Club", "Heart"];
+let currentCard = "Start";
+let wantedCard = cards[Math.floor(Math.random()*4)];
+while(currentCard != wantedCard); {
+    console.log(currentCard);
+    currentCard = cards[Math.floor(Math.random()*4)];
+    if (currentCard == wantedCard) {
+        console.log(`${currentCard} is the right suit.\n`);
     }
-    else
-    console.log(`${currentCard} is the wrong suit.\n`)
+    else {
+        console.log(`${currentCard} is the wrong suit.\n`);
+    }
 }

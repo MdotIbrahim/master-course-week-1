@@ -1,49 +1,49 @@
 //* Activity 1
 
-let filmsArray = ["film1", "film2", "film3", "film4", "film5", ]
+let filmsArray = ["film1", "film2", "film3", "film4", "film5", ];
 
-filmsArray.push("film6", "film7")
+filmsArray.push("film6", "film7");
 
 for (let i = 0; i < filmsArray.length; i++) {
-    console.log(filmsArray[i])
+    console.log(filmsArray[i]);
 }
 
 //* Activity 2
 
 for (let x = 0; x < 6; x++) {
-    randomNum = Math.floor(Math.random()*50)
-    console.log(randomNum)
+    randomNum = Math.floor(Math.random()*50);
+    console.log(randomNum);
 }
 
 //* Activity 3
 
 for (let i = 9; i > -1; i--) {
-    console.log(i)
+    console.log(i);
 }
 
 //* Activity 4
 
-let filmsArray2 = ["film 1", "film 2", "Ghostbusters", "film 4"]
+let filmsArray2 = ["film 1", "film 2", "Ghostbusters", "film 4"];
 
 // doesnt check if 3rd specifically is ghostbusters but the outcome is the same.
 for (let i = 0; i < filmsArray2.length; i++) {
-    console.log(filmsArray2[i])
+    console.log(filmsArray2[i]);
     if (filmsArray2[i] == "Ghostbusters") {
-        console.log("Yay it's Ghostbusters")
+        console.log("Yay it's Ghostbusters");
     }
     else {
-        console.log("Boo! we want Ghostbusters!")
+        console.log("Boo! we want Ghostbusters!");
     } 
 }
 //this way does
 for (let i = 0; i < filmsArray2.length; i++) {
-    console.log(filmsArray2[i])
+    console.log(filmsArray2[i]);
     if (i == 2) {
         if (filmsArray2[i] == "Ghostbusters") {
-            console.log("Yay it's Ghostbusters")
+            console.log("Yay it's Ghostbusters");
         }
         else {
-            console.log("Boo! we want Ghostbusters!")
+            console.log("Boo! we want Ghostbusters!");
         } 
     }
 
@@ -52,37 +52,43 @@ for (let i = 0; i < filmsArray2.length; i++) {
 //* Activity 5
 
 for (let x = 0; x < 6; x++) {
-    randomNum = Math.floor(Math.random()*30)
+    randomNum = Math.floor(Math.random()*30);
     if (randomNum % 7 == 0) {
-        console.log(`The number ${randomNum} is divisible by 7.`)
+        console.log(`The number ${randomNum} is divisible by 7.`);
     }
     else {
-        console.log(`The number ${randomNum} isn't divisible by 7.`)
+        console.log(`The number ${randomNum} isn't divisible by 7.`);
     }
-    console.log(randomNum)
+    console.log(randomNum);
 }
 
 //* Activity 6
 
-let despairFollowers = ["Ron77", "Paul3", "Mutual1", "Mutual2"]
+let bobsFollowers = ["Ron77", "Paul3", "Mutual1", "Mutual2"];
 
-let hopeFollowers = ["Dave147", "David4", "Mutual1", "Mutual2"]
+let hannahsFollowers = ["Dave147", "David4", "Mutual1", "Mutual2"];
 
-let mutualArray = []
+let mutualArray = [];
 
-for (let x = 0; x < despairFollowers.length; x++) {
-    for (let y = 0; y < hopeFollowers.length; y++) {
-        if (despairFollowers[x] == hopeFollowers[y]) {
-            mutualArray.push(despairFollowers[x]) 
-            console.log(`Mutual follower: ${despairFollowers[x]}`)
+for (let x = 0; x < bobsFollowers.length; x++) {
+    for (let y = 0; y < hannahsFollowers.length; y++) {
+        if (bobsFollowers[x] == hannahsFollowers[y]) {
+            mutualArray.push(bobsFollowers[x]);
+            console.log(`Mutual follower: ${bobsFollowers[x]}`);
         }
     }
-}console.log(mutualArray)
+}console.log(mutualArray);
 
-//METHOD TWO
+//METHOD TWO USING FOR OF
+
+for(let item1 of bobsFollowers)
+    for(let item2 of hannahsFollowers)
+        if(item1 == item2)
+            console.log(`Mutual follower: ${item1}`);
+            mutualArray.push(bobsFollowers[x]);
+console.log(mutualArray); 
 
 //* Activity 7
-//TODO Research do...while loops
 
 // JavaScript supports different kinds of loops:
 
@@ -91,3 +97,13 @@ for (let x = 0; x < despairFollowers.length; x++) {
 //     for/of - loops through the values of an iterable object
 //     while - loops through a block of code while a specified condition is true
 //     do/while - also loops through a block of code while a specified condition is true
+
+// The do...while statement repeats until a specified condition evaluates to false. 
+
+//The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:
+
+let i = 0;
+do {
+    i += 1;
+    console.log(i);
+} while (i < 5);
