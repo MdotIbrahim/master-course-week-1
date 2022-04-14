@@ -43,7 +43,7 @@ const personTwo = {
     },
 }
 
-console.log(personTwo.sayHi())
+console.log(personTwo.sayHi());
 
 //*Activity 2
 
@@ -53,15 +53,15 @@ const pet = {
     "age": "2",
     "colour": "black and white",
     eat:() => { //!ERROR
-        return `${this.name} is eating`          
+        return `${this.name} is eating`;     
     },
     drink(){
-        return `${this.name} is drinking`
+        return `${this.name} is drinking`;
     },
 }
 
-console.log(pet.eat())
-console.log(pet.drink())
+console.log(pet.eat());
+console.log(pet.drink());
 
 //*Activity 3
 
@@ -70,13 +70,13 @@ const coffeeShop = {
     "drinksWithPrices": {"Fanta": "£0.99", "Coke": "£0.75"},
     "foodWithPrices": {"Burger": "£1.50", "Chips": "£0.99"},
     drinksOrdered(drinkP) {
-        return`Your order is ${this.drinksWithPrices} and will cost ${this.drinksWithPrices[drinkP]}` //!Error
+        return`Your order is ${this.drinksWithPrices} and will cost ${this.drinksWithPrices[drinkP]}`; //!Error
     },
     foodOrdered(foodP) {
-        return`Your order is ${this.foodWithPrices} and will cost ${this.foodWithPrices[foodP]}`
+        return`Your order is ${this.foodWithPrices} and will cost ${this.foodWithPrices[foodP]}`;
 
     },
 }
 
-console.log(coffeeShop.drinksOrdered("Coke"))
-console.log(coffeeShop.foodOrdered("Burger"))
+console.log(coffeeShop.drinksOrdered("Coke"));
+console.log(coffeeShop.foodOrdered("Burger"));
