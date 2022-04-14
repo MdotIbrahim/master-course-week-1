@@ -51,40 +51,40 @@ takeOrder("pineapple", orderCount);
 takeOrder("chicken", orderCount);
 
 //* Activity 3
-let pin = 1234
-let balance = 10000
-let attempts = 0
+let pin = 1234;
+let balance = 10000;
+let attempts = 0;
 const cashMachine = () => {
     const pinCheck = (pinInserted) => {
         if (pinInserted == pin) {
-            console.log("The pin was correct\n")
-            withdrawFunction(1000) // enough in balance
-            withdrawFunction(10000) //not enough in balance
+            console.log("The pin was correct\n");
+            withdrawFunction(1000); // enough in balance
+            withdrawFunction(10000); //not enough in balance
         }else {
-            console.log("The pin was incorrect")
-            attempts += 1
+            console.log("The pin was incorrect");
+            attempts += 1;
             if (attempts < 3) {
-                pinCheck()
+                pinCheck();
             }else {
-                console.log("\nYour card has been declined. Contact your bank for more information.")
+                console.log("\nYour card has been declined. Contact your bank for more information.");
             }
         }
     }
 
     const withdrawFunction = (withdrawAmount) => {
         if (withdrawAmount <= balance) {
-            balance -= withdrawAmount
-            console.log(`Take the £${withdrawAmount} and your card. Remaining balance: £${balance}\n`)
+            balance -= withdrawAmount;
+            console.log(`Take the £${withdrawAmount} and your card. Remaining balance: £${balance}\n`);
         }else {
-            console.log("Not enough money in account to withdraw requested amount.\n")
+            console.log("Not enough money in account to withdraw requested amount.\n");
         }
     }
 
-    console.log("\nActivity 3\n\nInsert your card.")
-    pinCheck(1234) // correct
-    pinCheck(4321) //incorrect
+    console.log("\nActivity 3\n\nInsert your card.");
+    pinCheck(1234); // correct
+    pinCheck(4321); //incorrect
 }
-cashMachine()
+cashMachine();
 
-console.log(balance)
+console.log(balance);
 
