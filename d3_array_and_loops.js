@@ -84,15 +84,29 @@ console.log("You're no longer too old!");
 
 
 let cards = ["Diamond", "Spade", "Club", "Heart"];
-let currentCard = "Start";
+let currentCard = "";
 let wantedCard = cards[Math.floor(Math.random()*4)];
-while(currentCard != wantedCard); {
-    console.log(currentCard);
+
+console.log(`\nI want a ${wantedCard}.\n`)
+
+while (currentCard != wantedCard) { //having a semi colon after the condition (before the curly bracket) is wrong and ruins everything which is why the loop wasnt working, but also why the code wasnt showing an error.
     currentCard = cards[Math.floor(Math.random()*4)];
     if (currentCard == wantedCard) {
-        console.log(`${currentCard} is the right suit.\n`);
-    }
-    else {
-        console.log(`${currentCard} is the wrong suit.\n`);
+        console.log(`${currentCard} is the right suit.`);
+    }else {
+        console.log(`${currentCard} is the wrong suit.`);
     }
 }
+
+currentCard = "";
+wantedCard = cards[Math.floor(Math.random()*4)];
+
+console.log(`\nI want a ${wantedCard}.\n`)
+do {
+    currentCard = cards[Math.floor(Math.random()*4)];
+    if (currentCard == wantedCard) {
+        console.log(`${currentCard} is the right suit.`);
+    }else {
+        console.log(`${currentCard} is the wrong suit.`);
+    }
+} while (currentCard != wantedCard); //it is also why changing to a do while loop "fixed" the problem as the semi colon here is fine.
